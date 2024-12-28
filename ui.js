@@ -8,6 +8,7 @@ $(document).ready(function(){
   curRaceList = raceListData;
   curGameMechanics = gameMechanicsList[curPreset.gameMechanics];
   curBlessingList = blessingsData;
+  curRaceList.id = 0
 
   sortDataLists();
   let gotBuild = initCharacterData();
