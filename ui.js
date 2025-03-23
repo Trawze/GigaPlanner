@@ -841,7 +841,7 @@ function updateBuildCodeDisplay(){
   let buildCheck = validateBuild();
   if(buildCheck.valid){
     let code = generateBuildCode();
-    let buildLink = `https://trawze.github.io/GigaPlanner/?p=${curPreset.id}&b=${code}`;
+    let buildLink = `https://trawze.github.io/LorerimPlannerBeta/?p=${curPreset.id}&b=${code}`;
     $("#buildCodeText").val(buildLink);
   }
   else{
