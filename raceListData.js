@@ -4,9 +4,10 @@
 const raceListData = [
 	{ 
 	 name: "Argonian", 
-     startingHMS: [100,100,100], 
-     startingCW: 120, speedBonus: 0,
-     hmsBonus: [0,0,0], 
+     startingHMS: [150,125,100], 
+     startingCW: 200, speedBonus: 0,
+     hmsBonus: [0,0,0],
+     bonushealth: 50, 
      startingHMSRegen: [0.20,1.10,1.60], 
      unarmedDam: 32,
      startingSkills : [10,       //Smithing
@@ -34,9 +35,9 @@ const raceListData = [
     },
     {
      name: "Breton", 
-     startingHMS: [90,110,100], 
-     startingCW: 110, speedBonus: 0,
-     hmsBonus: [0,0,0], 
+     startingHMS: [125,150,100], 
+     startingCW: 200, speedBonus: 0,
+     hmsBonus: [0,0,0],
      startingHMSRegen: [0.15,1.15,1.60], 
      unarmedDam: 12,
      startingSkills : [10,       //Smithing
@@ -64,9 +65,9 @@ const raceListData = [
     },
     {
      name: "Dunmer", 
-     startingHMS: [100,100,100], 
-     startingCW: 120, speedBonus: 0,
-     hmsBonus: [0,0,0], 
+     startingHMS: [100,150,125], 
+     startingCW: 200, speedBonus: 0,
+     hmsBonus: [0,0,0],
      startingHMSRegen: [0.20,1.10,1.60], 
      unarmedDam: 13,
      startingSkills : [10,       //Smithing
@@ -94,9 +95,9 @@ const raceListData = [
     },
     {
      name: "Altmer", 
-     startingHMS: [90,120,90], 
-     startingCW: 110, speedBonus: 0,
-     hmsBonus: [0,30,0], 
+     startingHMS: [100,175,100], 
+     startingCW: 200, speedBonus: 0,
+     hmsBonus: [0,0,0],
      startingHMSRegen: [0.15,1.20,1.55], 
      unarmedDam: 12,
      startingSkills : [10,       //Smithing
@@ -120,13 +121,13 @@ const raceListData = [
                         1,       //Destiny
                         0],		 // Traits
 	 desc: "The Altmer of Summerset Isle are called 'High' Elves in the Empire, describing both their physical appearance and their snobbish personality. The arcane ability of High Elves surpasses all other races in Tamriel. Their Highborn ability grants them increased magicka and spell power. They are weak in physical combat, however, and their magic affinity makes them more susceptible to elemental damage.",
-	 bonus: "Highborn: Magicka increases by 30, magicka regenerates 30% faster, spells are 5% more powerful and last longer, you are 50% less likely to contract diseases. <br> Resist Fatigue: 15% resistance to fatigue. <br> Weakness to Elements: Fire, frost and shock deal 25% more damage to you.",
+	 bonus: "Highborn: Magicka increases by 30, magicka regenerates 50% faster, spells are 5% more powerful and last longer, you are 50% less likely to contract diseases. <br> Resist Fatigue: 15% resistance to fatigue. <br> Weakness to Elements: Fire, frost and shock deal 10% more damage to you.",
     },
     {
      name: "Imperial", 
-     startingHMS: [100,100,100], 
-     startingCW: 120, speedBonus: 0,
-     hmsBonus: [10,10,10], 
+     startingHMS: [125,125,125], 
+     startingCW: 200, speedBonus: 0,
+     hmsBonus: [0,0,0],
      startingHMSRegen: [0.20,1.10,1.60], 
      unarmedDam: 13,
      startingSkills : [10,       //Smithing
@@ -154,9 +155,9 @@ const raceListData = [
     },
     {
      name: "Khajiit", 
-     startingHMS: [90,90,120], 
-     startingCW: 110, speedBonus: 9,
-     hmsBonus: [0,0,0], 
+     startingHMS: [100,100,175], 
+     startingCW: 200, speedBonus: 9,
+     hmsBonus: [0,0,0],
      startingHMSRegen: [0.15,1.05,1.70], 
      unarmedDam: 32,
      startingSkills : [10,       //Smithing
@@ -184,9 +185,9 @@ const raceListData = [
     },
     {
      name: "Nord", 
-     startingHMS: [110,80,110], 
-     startingCW: 130, speedBonus: 0,
-     hmsBonus: [0,0,0], 
+     startingHMS: [150,100,125], 
+     startingCW: 200, speedBonus: 0,
+     hmsBonus: [0,0,0],
      startingHMSRegen: [0.25,1.00,1.65], 
      unarmedDam: 12,
      startingSkills : [20,       //Smithing
@@ -214,9 +215,9 @@ const raceListData = [
     },
     {
      name: "Orsimer", 
-     startingHMS: [110,80,110], 
-     startingCW: 130, speedBonus: 0,
-     hmsBonus: [30,0,0], 
+     startingHMS: [175,100,100], 
+     startingCW: 200, speedBonus: 0,
+     hmsBonus: [0,0,0],
      startingHMSRegen: [0.25,1.00,1.65], 
      unarmedDam: 14,
      startingSkills : [20,       //Smithing
@@ -244,9 +245,9 @@ const raceListData = [
     },
     {
      name: "Redguard", 
-     startingHMS: [100,80,120], 
-     startingCW: 120, speedBonus: 0,
-     hmsBonus: [0,0,30], 
+     startingHMS: [125,100,150], 
+     startingCW: 200, speedBonus: 0,
+     hmsBonus: [0,0,0],
      startingHMSRegen: [0.20,1.00,1.70], 
      unarmedDam: 13,
      startingSkills : [15,       //Smithing
@@ -274,9 +275,9 @@ const raceListData = [
     },
     {
      name: "Bosmer", 
-     startingHMS: [90,100,110], 
-     startingCW: 110, speedBonus: 0,
-     hmsBonus: [0,0,0], 
+     startingHMS: [100,125,150], 
+     startingCW: 200, speedBonus: 0,
+     hmsBonus: [0,0,0],
      startingHMSRegen: [0.15,1.10,1.65], 
      unarmedDam: 12,
      startingSkills : [10,       //Smithing
